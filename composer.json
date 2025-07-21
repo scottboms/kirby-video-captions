@@ -1,0 +1,33 @@
+{
+	"name": "scottboms/video-captions",
+	"description": "Video Captions",
+	"type": "kirby-plugin",
+	"homepage": "https://github.com/scottboms/kirby-video-captions",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Scott Boms",
+			"email": "plugins@scottboms.com"
+		}
+	],
+	"support": {
+		"docs": "https://github.com/scottboms/kirby-video-captions/blob/main/README.md",
+		"source": "https://github.com/scottboms/kirby-video-captions"
+	},
+		"license": "MIT",
+		"keywords": [
+			"kirby",
+			"kirby-cms",
+			"kirby-plugin",
+			"kirby4",
+			"kirby5"
+		],
+	"require": {
+		"php": ">8.2.0 <8.4.0",
+		"getkirby/cms": "^4.0 || ^5.0",
+		"getkirby/composer-installer": "^1.1"
+	},
+	"extra": {
+		"installer-name": "video-captions"
+	}
+}

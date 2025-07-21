@@ -1,0 +1,20 @@
+# blueprints/files/captions.yml
+title: Captions
+
+options:
+  changeTemplate: true
+  delete: false
+
+accept:
+  extension: srt, vtt
+  mime: text/plain, application/x-subrip, text/vtt
+
+image:
+  back: pattern
+  cover: true
+  ratio: 2/3
+
+fields:
+  alt:
+    label: Alt Text
+    type: text
