@@ -8,18 +8,20 @@
  * @license MIT
 **/
 
-use Composer\Semver\Semver;
-use Kirby\Cms\App as Kirby;
+use Kirby\Cms\App;
 
-// validate Kirby version
-if (Semver::satisfies(Kirby::version() ?? '0.0.0', '~4.0 || ~5.0') === false) {
-	throw new Exception('SVG Tag requires Kirby 4 or 5');
+// shamelessly borrowed from distantnative/retour-for-kirby
+if (
+	version_compare(App::version() ?? '0.0.0', '4.0.1', '<') === true ||
+	version_compare(App::version() ?? '0.0.0', '6.0.0', '>=') === true
+) {
+	throw new Exception('Caption Files Support requires Kirby v4 or v5');
 }
 
-Kirby::plugin('scottboms/video-captions', 
+Kirby::plugin('scottboms/video-captions',
 info: [
 	'homepage' => 'https://github.com/scottboms/kirby-caption-files',
-	'version' => '1.0.0',
+	'version' => '1.0.1',
 	'license' => 'MIT',
 	'authors' => [
 		[
