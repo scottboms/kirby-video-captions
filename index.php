@@ -8,7 +8,16 @@
  * @license MIT
 **/
 
+if (class_exists('Kirby\Panel\Ui\FilePreview') === false) {
+	return;
+}
+
+load([
+  'scottboms\CaptionFilePreview\CaptionFile' => __DIR__ . '/classes/CaptionFiles.php'
+]);
+
 use Kirby\Cms\App;
+use Scottboms\CaptionFilePreview\CaptionFile;
 
 // shamelessly borrowed from distantnative/retour-for-kirby
 if (
@@ -21,7 +30,7 @@ if (
 Kirby::plugin('scottboms/video-captions',
 info: [
 	'homepage' => 'https://github.com/scottboms/kirby-caption-files',
-	'version' => '1.0.1',
+	'version' => '1.1.0',
 	'license' => 'MIT',
 	'authors' => [
 		[
@@ -46,5 +55,8 @@ extends: [
 	],
 	'blueprints' => [
 		'files/captions' => __DIR__ . '/blueprints/files/captions.yml'
-	]
+	],
+	'filePreviews' => [
+		CaptionFile::class
+	],
 ]);

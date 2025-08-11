@@ -2,7 +2,7 @@
   "name": "video-captions",
   "description": "Video Captions",
   "author": "Scott Boms <plugins@scottboms.com>",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "type": "kirby-plugin",
   "license": "MIT",
   "scripts": {

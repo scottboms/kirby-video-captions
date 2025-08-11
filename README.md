@@ -2,7 +2,7 @@
 
 ![Plugin Preview](src/assets/video-captions-plugin.jpg)
 
-This plugin adds support for uploading common video caption sidecar files (.srt and .vtt formats) to file field uploads using a custom file type blueprint.
+This plugin adds support for uploading common video caption sidecar files (.srt and .vtt formats) to file field uploads using a custom file type blueprint and includes a [Custom File Preview](https://getkirby.com/docs/reference/plugins/extensions/file-previews) for Kirby 5.
 
 ## Installation
 
