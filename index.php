@@ -21,16 +21,16 @@ use Scottboms\CaptionFilePreview\CaptionFile;
 
 // shamelessly borrowed from distantnative/retour-for-kirby
 if (
-	version_compare(App::version() ?? '0.0.0', '4.0.1', '<') === true ||
-	version_compare(App::version() ?? '0.0.0', '6.0.0', '>=') === true
+	version_compare(App::version() ?? '0.0.0', '6.0.0', '<') === true ||
+	version_compare(App::version() ?? '0.0.0', '7.0.0', '>=') === true
 ) {
-	throw new Exception('Caption Files Support requires Kirby v4 or v5');
+	throw new Exception('Caption Files Support requires Kirby v6');
 }
 
 Kirby::plugin('scottboms/video-captions',
 info: [
 	'homepage' => 'https://github.com/scottboms/kirby-caption-files',
-	'version' => '1.1.0',
+	'version' => '6.0.0',
 	'license' => 'MIT',
 	'authors' => [
 		[
