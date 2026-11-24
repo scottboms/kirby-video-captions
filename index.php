@@ -30,7 +30,7 @@ if (
 Kirby::plugin('scottboms/video-captions',
 info: [
 	'homepage' => 'https://github.com/scottboms/kirby-caption-files',
-	'version' => '1.1.0',
+	'version' => '1.1.1',
 	'license' => 'MIT',
 	'authors' => [
 		[
